@@ -1,4 +1,4 @@
-module AdventOfCode2022
+module AOC2022
 
 # Write your package code here.
 

@@ -1,6 +1,6 @@
-using AdventOfCode2022
+using AOC2022
 using Test
 
-@testset "AdventOfCode2022.jl" begin
+@testset "AOC2022.jl" begin
     # Write your tests here.
 end

@@ -1,14 +1,14 @@
 ```@meta
-CurrentModule = AdventOfCode2022
+CurrentModule = AOC2022
 ```
 
-# AdventOfCode2022
+# AOC2022
 
-Documentation for [AdventOfCode2022](https://github.com/binnisb/AdventOfCode2022.jl).
+Documentation for [AOC2022](https://github.com/binnisb/AOC2022.jl).
 
 ```@index
 ```
 
 ```@autodocs
-Modules = [AdventOfCode2022]
+Modules = [AOC2022]
 ```

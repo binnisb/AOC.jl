@@ -18,7 +18,6 @@ jobs:
       fail-fast: false
       matrix:
         version:
-          - '1.0'
           - '1.8'
           - 'nightly'
         os:
@@ -55,6 +54,6 @@ jobs:
       - run: |
           julia --project=docs -e '
             using Documenter: DocMeta, doctest
-            using AdventOfCode2022
-            DocMeta.setdocmeta!(AdventOfCode2022, :DocTestSetup, :(using AdventOfCode2022); recursive=true)
-            doctest(AdventOfCode2022)'
+            using AOC2022
+            DocMeta.setdocmeta!(AOC2022, :DocTestSetup, :(using AOC2022); recursive=true)
+            doctest(AOC2022)'
