@@ -1,5 +1,7 @@
 module AOC2022
+export solve
 
-# Write your package code here.
+include("FileReader.jl")
+include("Solvers.jl")
 
 end
