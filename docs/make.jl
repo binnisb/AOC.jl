@@ -1,16 +1,16 @@
-using AOC2022
+using AOC
 using Documenter
 
-DocMeta.setdocmeta!(AOC2022, :DocTestSetup, :(using AOC2022); recursive=true)
+DocMeta.setdocmeta!(AOC, :DocTestSetup, :(using AOC); recursive=true)
 
 makedocs(;
-    modules=[AOC2022],
+    modules=[AOC],
     authors="Brynjar Smári Bjarnason <binni@binnisb.com> and contributors",
-    repo="https://github.com/binnisb/AOC2022.jl/blob/{commit}{path}#{line}",
-    sitename="AOC2022.jl",
+    repo="https://github.com/binnisb/AOC.jl/blob/{commit}{path}#{line}",
+    sitename="AOC.jl",
     format=Documenter.HTML(;
         prettyurls=get(ENV, "CI", "false") == "true",
-        canonical="https://binnisb.github.io/AOC2022.jl",
+        canonical="https://binnisb.github.io/AOC.jl",
         edit_link="main",
         assets=String[],
     ),
@@ -20,6 +20,6 @@ makedocs(;
 )
 
 deploydocs(;
-    repo="github.com/binnisb/AOC2022.jl",
+    repo="github.com/binnisb/AOC.jl",
     devbranch="main",
 )

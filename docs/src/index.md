@@ -1,14 +1,14 @@
 ```@meta
-CurrentModule = AOC2022
+CurrentModule = AOC
 ```
 
-# AOC2022
+# AOC
 
-Documentation for [AOC2022](https://github.com/binnisb/AOC2022.jl).
+Documentation for [AOC](https://github.com/binnisb/AOC.jl).
 
 ```@index
 ```
 
 ```@autodocs
-Modules = [AOC2022]
+Modules = [AOC]
 ```

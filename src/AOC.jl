@@ -1,4 +1,4 @@
-module AOC2022
+module AOC
 export solve, inputToData, Path, Data
 include("Common.jl")
 include("DataProcessing.jl")

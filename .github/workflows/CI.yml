@@ -54,6 +54,6 @@ jobs:
       - run: |
           julia --project=docs -e '
             using Documenter: DocMeta, doctest
-            using AOC2022
-            DocMeta.setdocmeta!(AOC2022, :DocTestSetup, :(using AOC2022); recursive=true)
-            doctest(AOC2022)'
+            using AOC
+            DocMeta.setdocmeta!(AOC, :DocTestSetup, :(using AOC); recursive=true)
+            doctest(AOC)'

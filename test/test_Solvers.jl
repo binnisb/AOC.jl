@@ -1,7 +1,7 @@
 using TestItems
 
 @testitem "solveproblem 1" begin
-    using AOC2022.Solvers: solveproblem
+    using AOC.Solvers: solveproblem
     @test solveproblem("asdf") == "asdf"
 end
 

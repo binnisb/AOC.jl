@@ -9,7 +9,7 @@ git-tree-sha1 = "574baf8110975760d391c710b6341da1afa48d8c"
 uuid = "a4c015fc-c6ff-483c-b24f-f7ea428134e9"
 version = "0.0.1"
 
-[[deps.AOC2022]]
+[[deps.AOC]]
 path = ".."
 uuid = "b5010307-9001-4e88-9e9e-554293a89891"
 version = "0.1.0"
