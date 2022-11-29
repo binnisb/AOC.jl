@@ -1,25 +1,19 @@
 module Solvers
-    export solve, FullInput, TestInput
+export solve
 
-    abstract type Puzzle end
-    abstract type FullInput <: Puzzle end
-    abstract type TestInput <: Puzzle end
+using ..Common: Path, Data
+using ..DataProcessing: inputToData, readpuzzle
 
-    readpuzzle(path::String) = begin
-        open(path) do f
-            readlines(f)
-        end
-    end
-    readpuzzle(::Type{FullInput}, num::Int) ="$(@__DIR__)/../data/puzzle/$(num).txt" |> readpuzzle
-    readpuzzle(::Type{TestInput}, num::Int) = "$(@__DIR__)/../data/puzzle_test/$(num).txt" |> readpuzzle
+function solve(path::Path; fFunc=readpuzzle, dFunc=identity, sFunc=solveproblem)
+    inputToData(path, fFunc, dFunc) |> data -> solve(data; sFunc=sFunc) 
+end
 
-    solve(::Type{T}, problem::Int, part::Int, dataIn) where T <: Puzzle = 
-        solve(T, Val(problem), Val(part), dataIn)
+function solve(data::Data; sFunc=solveproblem)
+    sFunc(data.data)
+end
 
-    solve(::Type{T}, ::Val{N}, ::Val{M}, dataIn) where T <: Puzzle where {N,M} = 
-        readpuzzle(T, N) |> solveproblem(Val(N),Val(M), dataIn)
+function solveproblem(data)
+    return data
+end
 
-    function solveproblem(::Val{1}, ::Val{1}, dataIn)
-        return dataIn
-    end
 end

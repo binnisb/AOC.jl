@@ -3,3 +3,25 @@
 ## Citing
 
 See [`CITATION.bib`](CITATION.bib) for the relevant reference(s).
+
+## Adding the module in src
+In Julia repl in root in DrWatson project and pkg
+```julia
+
+julia> pwd()
+"/home/binni/projects/AdventOfCode2022"
+
+(AdventOfCode2022) pkg> dev src/AOC2022/
+.git/     .github/  test/     docs/     src/
+(AdventOfCode2022) pkg> dev src/AOC2022/
+   Resolving package versions...
+    Updating `~/projects/AdventOfCode2022/Project.toml`
+  [b5010307] + AOC2022 v0.1.0 `src/AOC2022`
+    Updating `~/projects/AdventOfCode2022/Manifest.toml`
+  [b5010307] + AOC2022 v0.1.0 `src/AOC2022`
+
+```
+Now I can
+```julia
+using AOC2022
+```
